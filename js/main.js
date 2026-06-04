@@ -42,22 +42,40 @@
         var q = item.querySelector('.faq-q');
         var a = item.querySelector('.faq-a');
         if (!q || !a) return;
-        q.addEventListener('click', function () {
+
+        // Make the question keyboard-operable and announce state to screen readers
+        q.setAttribute('role', 'button');
+        q.setAttribute('tabindex', '0');
+        q.setAttribute('aria-expanded', 'false');
+
+        function toggle() {
             var isOpen = item.classList.contains('open');
             // close siblings
             document.querySelectorAll('.faq-item.open').forEach(function (other) {
                 if (other !== item) {
                     other.classList.remove('open');
+                    var oq = other.querySelector('.faq-q');
                     var oa = other.querySelector('.faq-a');
+                    if (oq) oq.setAttribute('aria-expanded', 'false');
                     if (oa) oa.style.maxHeight = null;
                 }
             });
             if (isOpen) {
                 item.classList.remove('open');
+                q.setAttribute('aria-expanded', 'false');
                 a.style.maxHeight = null;
             } else {
                 item.classList.add('open');
+                q.setAttribute('aria-expanded', 'true');
                 a.style.maxHeight = a.scrollHeight + 'px';
+            }
+        }
+
+        q.addEventListener('click', toggle);
+        q.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+                e.preventDefault();
+                toggle();
             }
         });
     });

@@ -65,11 +65,20 @@ site). When editing nav/footer, update all HTML files consistently.
 - Tone: warm, reassuring, professional. Frame everything from the passenger's /
   family's peace of mind.
 
+## Logo Assets
+
+Source master is `images/png.png` (vertical lockup, dark-navy elements). Two derived
+assets are generated from it with Pillow and used on the site:
+- `images/logo.png` — full lockup (720px), used in the home hero on a WHITE plate
+  (the logo's dark navy would vanish on the dark hero, so it sits on a white card).
+- `images/logo-icon.png` — shield only (360px), used in the nav and footer paired with
+  a text wordmark (`.logo-fallback` span, always visible — not a fallback anymore).
+
 ## Outstanding Tasks
 
-- [ ] Add real logo as `images/logo.png`
+- [x] Logo added (`logo.png` + `logo-icon.png`)
 - [ ] Replace `YOUR_FORM_ID` in `book.html` with the real Formspree endpoint
-- [ ] Enable GitHub Pages (Settings → Pages → main / root)
+- [x] GitHub Pages enabled
 - [ ] (Optional) custom domain + CNAME, Google Analytics, OG share image, sitemap.xml
 
 ## Local Preview Note

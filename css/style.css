@@ -201,21 +201,20 @@ section { position: relative; }
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.6rem;
 }
-.nav-logo img { height: 56px; width: auto; }
-/* Text fallback shown if logo image is missing */
+.nav-logo-icon { height: 46px; width: auto; }
 .nav-logo .logo-fallback {
     font-family: var(--font-display);
     font-weight: 800;
     line-height: 1;
     color: var(--navy);
 }
-.nav-logo .logo-fallback .lf-main { font-size: 1.35rem; letter-spacing: 0.02em; }
+.nav-logo .logo-fallback .lf-main { font-size: 1.2rem; letter-spacing: 0.02em; }
 .nav-logo .logo-fallback .lf-sub {
     display: block;
-    font-size: 0.62rem;
-    letter-spacing: 0.34em;
+    font-size: 0.58rem;
+    letter-spacing: 0.3em;
     color: var(--blue);
     font-weight: 600;
     margin-top: 2px;
@@ -364,13 +363,13 @@ section { position: relative; }
 }
 .hero-art .logo-glow {
     position: relative;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.10);
-    border-radius: 24px;
-    padding: 2.5rem;
-    backdrop-filter: blur(4px);
+    background: #ffffff;
+    border: 1px solid rgba(255,255,255,0.55);
+    border-radius: 26px;
+    padding: 2.6rem 2.9rem;
+    box-shadow: 0 26px 64px rgba(0,0,0,0.38);
 }
-.hero-art img { width: 230px; height: auto; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.4)); }
+.hero-art .hero-logo { width: 300px; height: auto; display: block; }
 .hero-art .shield-svg { width: 200px; height: auto; }
 
 /* ============================================================
@@ -793,8 +792,10 @@ section { position: relative; }
     gap: 2.5rem;
     padding-bottom: 3rem;
 }
-.footer-brand img { height: 64px; margin-bottom: 1.1rem; }
-.footer-brand .logo-fallback { color: #fff; margin-bottom: 1.1rem; }
+.footer-logo { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 1.1rem; }
+.footer-logo-icon { height: 54px; width: auto; }
+.footer-brand .logo-fallback { color: #fff; }
+.footer-brand .logo-fallback .lf-main { font-size: 1.25rem; }
 .footer-brand .logo-fallback .lf-sub { color: var(--blue-light); }
 .footer-brand p { font-size: 0.96rem; max-width: 320px; }
 .footer-col h4 {
@@ -836,7 +837,32 @@ section { position: relative; }
 .reveal.d3 { transition-delay: 0.24s; }
 @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; transition: none; }
+    .reveal.d1, .reveal.d2, .reveal.d3 { transition-delay: 0s; }
     html { scroll-behavior: auto; }
+}
+
+/* ============================================================
+   Keyboard focus indicators (visible only for keyboard users)
+   ============================================================ */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-links a:focus-visible,
+.nav-phone:focus-visible,
+.nav-toggle:focus-visible,
+.faq-q:focus-visible,
+.county:focus-visible {
+    outline: 3px solid var(--blue-light);
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+/* On dark backgrounds, use a lighter ring for contrast */
+.hero a:focus-visible,
+.cta a:focus-visible,
+.why a:focus-visible,
+.site-footer a:focus-visible,
+.page-hero a:focus-visible {
+    outline-color: #ffffff;
 }
 
 /* ============================================================

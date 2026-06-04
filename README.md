@@ -25,13 +25,13 @@ Static, multi-page site — pure HTML/CSS/JS, no build tools. Designed to deploy
 
 ## Setup checklist (before launch)
 
-1. **Add the logo.** Save the Guardian shield/wordmark image as `images/logo.png`
-   (recommended ~600px wide, transparent PNG). Until then, the site shows a styled
-   text fallback and the SVG shield. A favicon (`images/favicon.svg`) is already included.
+1. ✅ **Logo added.** `images/logo.png` (full lockup, used in the hero) and
+   `images/logo-icon.png` (shield only, used in the nav + footer) are generated from the
+   source `images/png.png`. A favicon (`images/favicon.svg`) is also included.
 2. **Wire up the booking form.** Create a form at [formspree.io](https://formspree.io)
    and replace `YOUR_FORM_ID` in `book.html` (the `<form action="...">` URL) with your
    real form endpoint. Until then the form shows a local success message and sends nothing.
-3. **Enable GitHub Pages.** Repo → Settings → Pages → deploy from `main` / root.
+3. ✅ **GitHub Pages enabled** — published at the repo's Pages URL.
 4. *(Optional)* Add a custom domain via a `CNAME` file + DNS, and add Google Analytics.
 
 ## Brand colors
