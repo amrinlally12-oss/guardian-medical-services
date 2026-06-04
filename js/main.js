@@ -80,6 +80,18 @@
         });
     });
 
+    // Recalculate the height of any open FAQ answer when the viewport changes
+    // (e.g. device rotation), so the content never clips or leaves a gap.
+    var faqResizeTimer;
+    window.addEventListener('resize', function () {
+        clearTimeout(faqResizeTimer);
+        faqResizeTimer = setTimeout(function () {
+            document.querySelectorAll('.faq-item.open .faq-a').forEach(function (a) {
+                a.style.maxHeight = a.scrollHeight + 'px';
+            });
+        }, 120);
+    }, { passive: true });
+
     /* ---------- Scroll reveal ---------- */
     var reveals = document.querySelectorAll('.reveal');
     if (reveals.length && 'IntersectionObserver' in window) {
@@ -149,8 +161,11 @@
         function showSuccess() {
             if (!success) return;
             success.classList.add('show');
-            success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            setTimeout(function () { success.classList.remove('show'); }, 12000);
+            // Let the message paint before scrolling, then keep it visible
+            // (no auto-hide) so the user keeps confirmation their request was sent.
+            setTimeout(function () {
+                success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 60);
         }
     }
 
