@@ -28,9 +28,9 @@ Static, multi-page site — pure HTML/CSS/JS, no build tools. Designed to deploy
 1. ✅ **Logo added.** `images/logo.png` (full lockup, used in the hero) and
    `images/logo-icon.png` (shield only, used in the nav + footer) are generated from the
    source `images/png.png`. A favicon (`images/favicon.svg`) is also included.
-2. **Wire up the booking form.** Create a form at [formspree.io](https://formspree.io)
-   and replace `YOUR_FORM_ID` in `book.html` (the `<form action="...">` URL) with your
-   real form endpoint. Until then the form shows a local success message and sends nothing.
+2. ✅ **Booking form wired up.** `book.html` posts to the Formspree endpoint
+   `https://formspree.io/f/mnjyjjgy` (form "Guardian - Book a Ride"); submissions email
+   to admin@guardianms.org.
 3. ✅ **GitHub Pages enabled** — published at the repo's Pages URL.
 4. *(Optional)* Add a custom domain via a `CNAME` file + DNS, and add Google Analytics.
 

@@ -77,8 +77,8 @@ assets are generated from it with Pillow and used on the site:
 ## Outstanding Tasks
 
 - [x] Logo added (`logo.png` + `logo-icon.png`)
-- [ ] Replace `YOUR_FORM_ID` in `book.html` with the real Formspree endpoint
-- [x] GitHub Pages enabled
+- [x] Booking form wired to Formspree (`https://formspree.io/f/mnjyjjgy` → admin@guardianms.org)
+- [x] GitHub Pages enabled + custom domain guardianms.org live with HTTPS enforced
 - [ ] (Optional) custom domain + CNAME, Google Analytics, OG share image, sitemap.xml
 
 ## Local Preview Note
