@@ -12,3 +12,6 @@ desktop.ini
 # Logs / misc
 *.log
 node_modules/
+
+# Local tooling
+.claude/

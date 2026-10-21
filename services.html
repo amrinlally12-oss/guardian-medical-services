@@ -3,219 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Guardian Medical Services — Ambulatory, Wheelchair, Gurney &amp; Specialty NEMT</title>
-    <meta name="description" content="Guardian Medical Services offers ambulatory, wheelchair, and gurney non-emergency medical transportation, plus specialty services including bariatric, oxygen-tank, and long-distance transport across Northern California.">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>Services – Wheelchair, Gurney, Ambulatory &amp; Bariatric Transport | Guardian Medical Services</title>
+    <meta name="description" content="Ambulatory, wheelchair, gurney/stretcher, bariatric, oxygen-tank and long-distance medical transportation across Northern California. Private pay, certified drivers, booking 24/7.">
+    <link rel="canonical" href="https://guardianms.org/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Guardian Medical Services">
+    <meta property="og:title" content="Medical Transportation Services | Guardian Medical Services">
+    <meta property="og:description" content="Ambulatory, wheelchair, gurney, bariatric, oxygen-tank and long-distance transport across Northern California.">
+    <meta property="og:url" content="https://guardianms.org/services.html">
+    <meta property="og:image" content="https://guardianms.org/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Guardian Medical Services – rides 24/7, (530) 453-6220">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- HEAD:START -->
+    <meta name="theme-color" content="#143041">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="/css/style.css?v=3">
+    <script>(function(d){d.classList.add('js');try{var s=localStorage.getItem('gms-text-size');if(s)d.setAttribute('data-text-size',s);}catch(e){}})(document.documentElement);</script>
+    <!-- HEAD:END -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://guardianms.org/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://guardianms.org/services.html"}
+        ]
+    }
+    </script>
 </head>
 <body>
+    <!-- HEADER:START -->
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- ===================== Header ===================== -->
+    <div class="utility-bar">
+        <div class="container utility-inner">
+            <p class="utility-note">
+                <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-alert"/></svg>
+                <span><span class="u-long">Non-emergency transportation. </span><strong>In an emergency, call 911.</strong></span>
+            </p>
+            <div class="text-size" role="group" aria-label="Text size">
+                <span class="text-size-label" aria-hidden="true">Text size</span>
+                <button type="button" data-text-size="" aria-pressed="true" aria-label="Normal text size">A</button>
+                <button type="button" data-text-size="lg" aria-pressed="false" aria-label="Larger text size">A+</button>
+                <button type="button" data-text-size="xl" aria-pressed="false" aria-label="Largest text size">A++</button>
+            </div>
+        </div>
+    </div>
+
     <header class="site-header">
-        <nav class="nav" aria-label="Primary">
-            <a href="index.html" class="nav-logo" aria-label="Guardian Medical Services — Home">
-                <img src="images/logo-icon.png" alt="" class="nav-logo-icon">
-                <span class="logo-fallback">
-                    <span class="lf-main">GUARDIAN</span>
-                    <span class="lf-sub">MEDICAL SERVICES</span>
-                </span>
+        <nav class="nav container" aria-label="Main">
+            <a href="/" class="brand" aria-label="Guardian Medical Services home">
+                <img src="/images/logo-icon.webp" alt="" width="46" height="55" class="brand-icon">
+                <span class="wordmark"><span class="wm-main">GUARDIAN</span><span class="wm-sub">MEDICAL SERVICES</span></span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="book.html" class="btn btn-primary" style="padding:0.6rem 1.4rem;">Book a Ride</a></li>
-            </ul>
-            <div class="nav-cta">
-                <a href="tel:+15304536220" class="nav-phone" aria-label="Call Guardian Medical Services at (530) 453-6220" title="Call (530) 453-6220">
-                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span>(530) 453-6220</span>
-                </a>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+                <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="nav-toggle-text">Menu</span>
+            </button>
+
+            <div class="nav-menu" id="site-menu">
+                <ul class="nav-links">
+                    <li><a href="/services.html" data-nav="services" aria-current="page">Services</a></li>
+                    <li><a href="/facilities.html" data-nav="facilities">For Facilities</a></li>
+                    <li><a href="/about.html" data-nav="about">About</a></li>
+                    <li><a href="/faq.html" data-nav="faq">FAQ</a></li>
+                    <li><a href="/contact.html" data-nav="contact">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="tel:+15304536220" class="nav-phone" data-track="call-header">
+                        <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-phone"/></svg>
+                        <span><span class="nav-phone-label">Call 24/7</span> (530) 453-6220</span>
+                    </a>
+                    <a href="/book.html" class="btn btn-primary btn-sm" data-nav="book">Request a Ride</a>
+                </div>
             </div>
         </nav>
     </header>
+    <!-- HEADER:END -->
 
-    <!-- ===================== Page hero ===================== -->
-    <section class="page-hero">
-        <div class="container">
-            <span class="eyebrow">Our Services</span>
-            <h1>Transportation for every level of care</h1>
-            <p>Whatever your mobility needs, Guardian has the right vehicle, equipment, and trained staff to get you there safely.</p>
-            <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
-        </div>
-    </section>
-
-    <!-- ===================== Core services ===================== -->
-    <section class="section">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="eyebrow">Core Transport</span>
-                <h2>Our standard services</h2>
-                <div class="accent-line"></div>
-            </div>
-            <div class="grid grid-3">
-                <div class="card service-card reveal">
-                    <span class="num">01</span>
-                    <div class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 8v6m0 0-3 6m3-6 3 6M7 11l5-1 5 1"/></svg></div>
-                    <h3>Ambulatory Transport</h3>
-                    <p>For passengers who can walk with little or no assistance.</p>
-                    <ul class="feature-list">
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Door-to-door assistance</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Clean, comfortable vehicles</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Appointments, dialysis, therapy</li>
-                    </ul>
-                </div>
-                <div class="card service-card reveal d1">
-                    <span class="num">02</span>
-                    <div class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="5" r="2"/><path d="M11 7v6h6l2 5"/><circle cx="11" cy="16" r="5"/><path d="M11 11h5"/></svg></div>
-                    <h3>Wheelchair Transport</h3>
-                    <p>Lift-equipped vans with full securement for wheelchair users.</p>
-                    <ul class="feature-list">
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Hydraulic lifts &amp; ramps</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 4-point securement systems</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Trained attendants</li>
-                    </ul>
-                </div>
-                <div class="card service-card reveal d2">
-                    <span class="num">03</span>
-                    <div class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="6" rx="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/><path d="M6 9V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/></svg></div>
-                    <h3>Gurney Transport</h3>
-                    <p>Stretcher-level transport for passengers who must lie flat.</p>
-                    <ul class="feature-list">
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Bed-level comfort &amp; stability</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Secure gurney locking</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Facility &amp; hospital discharge</li>
-                    </ul>
+    <main id="main" tabindex="-1">
+        <section class="page-hero">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Services</li></ol></nav>
+                <span class="eyebrow">Our services</span>
+                <h1>Transportation for every level of care</h1>
+                <p>Whatever your mobility needs, we send the right vehicle and a trained, certified driver to get you there safely.</p>
+                <div class="hero-actions">
+                    <a href="/book.html" class="btn btn-light btn-lg">Request a Ride</a>
+                    <a href="tel:+15304536220" class="btn btn-ghost btn-lg" data-track="call-services-hero">Call (530) 453-6220</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===================== Specialty services ===================== -->
-    <section class="section" style="background:var(--sky-soft);">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="eyebrow">Specialty Transport</span>
-                <h2>Specialized services</h2>
-                <p>Additional care options for passengers with specific needs.</p>
-                <div class="accent-line"></div>
-            </div>
-            <div class="grid grid-3">
-                <div class="card reveal">
-                    <div class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg></div>
-                    <h3>Bariatric Transport</h3>
-                    <p>Reinforced equipment and trained staff to safely and respectfully transport heavier or larger passengers.</p>
+        <section class="section" aria-labelledby="core-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Choose your ride</span>
+                    <h2 id="core-title">Six ways we can help</h2>
+                    <p class="lead">Not sure which fits? Choose "Not sure" when you request a ride and we'll help you decide.</p>
                 </div>
-                <div class="card reveal d1">
-                    <div class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6v4l-1 1v2a4 4 0 0 1-4 0V7L9 6z"/><rect x="8" y="9" width="8" height="13" rx="2"/></svg></div>
-                    <h3>Oxygen-Tank Transport</h3>
-                    <p>Safe accommodation and securement of portable oxygen for passengers who require supplemental O₂ during transit.</p>
-                </div>
-                <div class="card reveal d2">
-                    <div class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
-                    <h3>Long-Distance Transport</h3>
-                    <p>Comfortable point-to-point trips beyond our standard service area — including out-of-county and out-of-region transport.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===================== Who we help ===================== -->
-    <section class="section">
-        <div class="container">
-            <div class="area-wrap">
-                <div class="reveal">
-                    <span class="eyebrow">Who We Help</span>
-                    <h2 style="font-size:clamp(1.8rem,3vw,2.4rem); margin-bottom:1rem;">Trusted by families, facilities, and care teams</h2>
-                    <p style="color:var(--text-light); margin-bottom:1.2rem;">We coordinate directly with families, senior living communities, skilled nursing facilities, hospitals, and dialysis centers to make every trip seamless.</p>
-                    <ul class="feature-list">
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Routine medical &amp; specialist appointments</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dialysis, infusion &amp; recurring treatments</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Hospital &amp; facility discharges</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Senior living &amp; residential care transfers</li>
-                    </ul>
-                </div>
-                <div class="aside-card reveal d1" style="background:var(--navy);">
-                    <h3>Payment</h3>
-                    <p style="color:rgba(255,255,255,0.8); margin-bottom:1.2rem;">Guardian Medical Services is a private-pay provider. We keep billing simple and transparent — no insurance paperwork, no broker middlemen.</p>
-                    <ul>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Straightforward private-pay pricing</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Quotes provided up front</li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Call for rates &amp; scheduling</li>
-                    </ul>
+                <div class="service-list">
+                    <article class="service-row reveal" id="ambulatory">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-walk"/></svg></div>
+                        <div>
+                            <span class="tag">Core service</span>
+                            <h3>Ambulatory transport</h3>
+                            <p>Safe, comfortable rides for people who can walk with little or no assistance, to and from medical appointments.</p>
+                            <ul class="check-list">
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Door-to-door assistance</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Appointments, therapy &amp; treatments</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Round trips &amp; recurring rides</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Family ride-along welcome</li>
+                            </ul>
+                        </div>
+                        <a href="/book.html?service=ambulatory" class="btn btn-secondary">Request this ride</a>
+                    </article>
+
+                    <article class="service-row reveal" id="wheelchair">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-wheelchair"/></svg></div>
+                        <div>
+                            <span class="tag">Core service</span>
+                            <h3>Wheelchair transport</h3>
+                            <p>Specialized vehicles with wheelchair lifts and secure restraints, so riders travel safely and with dignity.</p>
+                            <ul class="check-list">
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Lift-equipped vehicles</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Secure wheelchair restraints</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Drivers trained in patient care</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Dialysis &amp; recurring schedules</li>
+                            </ul>
+                        </div>
+                        <a href="/book.html?service=wheelchair" class="btn btn-secondary">Request this ride</a>
+                    </article>
+
+                    <article class="service-row reveal" id="gurney">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-gurney"/></svg></div>
+                        <div>
+                            <span class="tag">Core service</span>
+                            <h3>Gurney / stretcher transport</h3>
+                            <p>For people who need bed-level care during the trip. Our gurney service keeps riders stable and comfortable from pickup to drop-off.</p>
+                            <ul class="check-list">
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Lying-down transport</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Hospital &amp; facility discharges</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Facility-to-facility transfers</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Trained, certified drivers</li>
+                            </ul>
+                        </div>
+                        <a href="/book.html?service=gurney" class="btn btn-secondary">Request this ride</a>
+                    </article>
+
+                    <article class="service-row reveal" id="bariatric">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-expand"/></svg></div>
+                        <div>
+                            <span class="tag">Specialty service</span>
+                            <h3>Bariatric transport</h3>
+                            <p>Extra-capacity equipment and trained staff to transport larger passengers safely and respectfully.</p>
+                            <ul class="check-list">
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Wheelchair or gurney options</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Tell us equipment needs when you book</li>
+                            </ul>
+                        </div>
+                        <a href="/book.html?service=bariatric" class="btn btn-secondary">Request this ride</a>
+                    </article>
+
+                    <article class="service-row reveal" id="oxygen">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-oxygen"/></svg></div>
+                        <div>
+                            <span class="tag">Specialty service</span>
+                            <h3>Oxygen-tank transport</h3>
+                            <p>Riders who use portable oxygen are welcome. We secure the tank safely for the whole trip.</p>
+                            <ul class="check-list">
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Available with any ride type</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Let us know when you book</li>
+                            </ul>
+                        </div>
+                        <a href="/book.html?service=oxygen" class="btn btn-secondary">Request this ride</a>
+                    </article>
+
+                    <article class="service-row reveal" id="long-distance">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-route"/></svg></div>
+                        <div>
+                            <span class="tag">Specialty service</span>
+                            <h3>Long-distance transport</h3>
+                            <p>Comfortable point-to-point trips beyond our local service area, including out-of-county and out-of-region transfers.</p>
+                            <ul class="check-list">
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Ambulatory, wheelchair, or gurney</li>
+                                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Quoted before you book</li>
+                            </ul>
+                        </div>
+                        <a href="/book.html?service=long-distance" class="btn btn-secondary">Request this ride</a>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===================== CTA ===================== -->
-    <section class="section cta">
-        <div class="container">
-            <h2 class="reveal">Not sure which service you need?</h2>
-            <p class="reveal">Call us and we'll help you choose the right transport for your situation.</p>
-            <div class="cta-actions reveal">
-                <a href="book.html" class="btn btn-primary btn-lg">Book a Ride</a>
-                <a href="tel:+15304536220" class="btn btn-ghost btn-lg">Call (530) 453-6220</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== Footer ===================== -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="images/logo-icon.png" alt="" class="footer-logo-icon">
-                        <span class="logo-fallback">
-                            <span class="lf-main">GUARDIAN</span>
-                            <span class="lf-sub">MEDICAL SERVICES</span>
-                        </span>
+        <section class="section section-alt" aria-labelledby="included-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Every ride</span>
+                    <h2 id="included-title">What's included with every trip</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card reveal">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-shield"/></svg></div>
+                        <h3>A certified driver</h3>
+                        <p>HIPAA, First Aid, and CPR certified, background-checked, and trained in patient care.</p>
                     </div>
-                    <p>Safe, reliable, and compassionate non-emergency medical transportation across the Sacramento Valley and Northern California.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Ambulatory</a></li>
-                        <li><a href="services.html">Wheelchair</a></li>
-                        <li><a href="services.html">Gurney</a></li>
-                        <li><a href="services.html">Specialty &amp; Long Distance</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-contact">
-                    <h4>Get in Touch</h4>
-                    <ul>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+15304536220">(530) 453-6220</a></li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="mailto:Admin@guardianms.org">Admin@guardianms.org</a></li>
-                        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Available 24/7</li>
-                    </ul>
+                    <div class="card reveal d1">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-van"/></svg></div>
+                        <h3>A safe, equipped vehicle</h3>
+                        <p>Regularly inspected vehicles with lifts, securement systems, and first aid supplies.</p>
+                    </div>
+                    <div class="card reveal d2">
+                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-users"/></svg></div>
+                        <h3>Room for family</h3>
+                        <p>Family members or caregivers can ride along at no extra charge.</p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="disclaimer">Guardian Medical Services provides non-emergency medical transportation only. In a medical emergency, call 911. Private-pay service — we do not bill insurance, Medicaid, or transportation brokers.</p>
-                <p>&copy; <span id="year">2026</span> Guardian Medical Services. All rights reserved.</p>
+        </section>
+
+        <section class="section" aria-labelledby="who-title">
+            <div class="container split split-center">
+                <div class="reveal">
+                    <span class="eyebrow">Where we take you</span>
+                    <h2 id="who-title" class="h2">Trusted for the trips that matter</h2>
+                    <p class="lead">We work with families, senior living communities, care facilities, hospitals, and dialysis centers to make every trip go smoothly.</p>
+                    <ul class="check-list">
+                        <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Routine medical &amp; specialist appointments</li>
+                        <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Dialysis, infusion &amp; recurring treatments</li>
+                        <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Hospital &amp; facility discharges</li>
+                        <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Senior living &amp; residential care transfers</li>
+                    </ul>
+                </div>
+                <div class="panel reveal d1">
+                    <h3>How pricing works</h3>
+                    <p>We're a private-pay provider, so there's no insurance paperwork and no broker in the middle. Every trip is quoted before you book, based on the type of transport and the distance.</p>
+                    <div class="hero-actions">
+                        <a href="/book.html" class="btn btn-light">Get a quote</a>
+                        <a href="tel:+15304536220" class="btn btn-ghost" data-track="call-pricing">Call us</a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="section cta" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title">Not sure which service you need?</h2>
+                <p>Call us and we'll help you choose the right transport for your situation.</p>
+                <div class="cta-actions">
+                    <a href="/book.html" class="btn btn-light btn-lg">Request a Ride</a>
+                    <a href="tel:+15304536220" class="btn btn-ghost btn-lg" data-track="call-cta">Call (530) 453-6220</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER:START -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="brand brand-light" aria-label="Guardian Medical Services home">
+                    <img src="/images/logo-icon.webp" alt="" width="46" height="55" class="brand-icon" loading="lazy">
+                    <span class="wordmark"><span class="wm-main">GUARDIAN</span><span class="wm-sub">MEDICAL SERVICES</span></span>
+                </a>
+                <p>Private-pay, non-emergency medical transportation for families and facilities across the Sacramento Valley and Northern California.</p>
+                <a href="/book.html" class="btn btn-primary btn-sm">Request a Ride</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-heading">Services</h2>
+                <ul>
+                    <li><a href="/services.html#ambulatory">Ambulatory</a></li>
+                    <li><a href="/services.html#wheelchair">Wheelchair</a></li>
+                    <li><a href="/services.html#gurney">Gurney / stretcher</a></li>
+                    <li><a href="/services.html#bariatric">Bariatric</a></li>
+                    <li><a href="/services.html#oxygen">Oxygen-tank</a></li>
+                    <li><a href="/services.html#long-distance">Long distance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-heading">Company</h2>
+                <ul>
+                    <li><a href="/about.html">About us</a></li>
+                    <li><a href="/facilities.html">For facilities</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy &amp; accessibility</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-heading">Get in touch</h2>
+                <ul class="footer-contact">
+                    <li>
+                        <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-phone"/></svg>
+                        <span><a href="tel:+15304536220" data-track="call-footer">(530) 453-6220</a><br><small>Rides &amp; booking 24/7</small></span>
+                    </li>
+                    <li>
+                        <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-mail"/></svg>
+                        <a href="mailto:Admin@guardianms.org">Admin@guardianms.org</a>
+                    </li>
+                    <li>
+                        <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-clock"/></svg>
+                        <span>Office: Mon&ndash;Fri 8&ndash;6, Sat 9&ndash;3</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="disclaimer">Guardian Medical Services provides non-emergency medical transportation only. In a medical emergency, call 911. We are a private-pay service and do not bill insurance, Medi-Cal/Medicaid, or transportation brokers.</p>
+            <p>&copy; <span id="year">2026</span> Guardian Medical Services. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <div class="mobile-actions">
+        <a href="tel:+15304536220" class="mobile-action mobile-action-call" data-track="call-sticky">
+            <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-phone"/></svg>
+            <span><strong>Call Now</strong><small>(530) 453-6220</small></span>
+        </a>
+        <a href="/book.html" class="mobile-action mobile-action-book">
+            <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-calendar"/></svg>
+            <span><strong>Request a Ride</strong></span>
+        </a>
+    </div>
+
+    <script src="/js/main.js?v=3" defer></script>
+    <!-- FOOTER:END -->
 </body>
 </html>
