@@ -8,7 +8,7 @@ Static, multi-page site: plain HTML/CSS/JS served by GitHub Pages. No build step
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Home: hero with "how your ride works" card, who-are-you-booking-for paths, services, steps, why private pay, service area, FAQ teaser |
+| `index.html` | Home: hero with "how your ride works" ticket and credentials spec row, who's-riding paths, numbered services index, why private pay, service-area departure board, FAQ teaser, closing call CTA |
 | `services.html` | All six services with deep-link anchors and "Request this ride" buttons |
 | `book.html` | 3-step ride/quote request (Formspree), works without JavaScript too |
 | `facilities.html` | For hospitals, SNFs, dialysis, assisted living, hospice + facility account form |
@@ -51,7 +51,11 @@ Both forms post to Formspree `https://formspree.io/f/mnjyjjgy`, which emails adm
 | `--blue-ink` | `#1f6e8c` | Buttons, links, eyebrows (AA contrast) |
 | `--blue` | `#2c87a8` | Decorative accents only |
 | `--blue-light` | `#3ba6cb` | Accents on navy |
-| `--sky` | `#e9f4f8` | Light tinted surfaces |
+| `--paper` | `#f3f6f6` | Cool off-white sections |
+| `--rule` | `#d3dcdf` | Hairline dividers |
+| `--signal` | `#e0a526` | Route-line dot only (never text) |
+
+Fonts: **Atkinson Hyperlegible Next** (text) and **Atkinson Hyperlegible Mono** (labels, phone numbers, counties), both from Google Fonts.
 
 ## Local preview
 

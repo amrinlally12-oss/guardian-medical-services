@@ -1,7 +1,7 @@
 /* ============================================================
    Guardian Medical Services — main.js
-   Header state, mobile menu, text-size control, scroll reveal,
-   booking stepper, Formspree submission, analytics hooks.
+   Header state, mobile menu, text-size control, booking stepper,
+   Formspree submission, analytics hooks.
    The site works without this file: content is visible, the FAQ
    uses native <details>, and forms submit as plain POSTs.
    ============================================================ */
@@ -33,6 +33,19 @@
         onScroll();
     }
 
+    /* The nav can wrap (larger text sizes, narrow desktops), so anchor offsets and
+       sticky sidebars use the header's measured height instead of a fixed value. */
+    var syncHeaderHeight = function () {
+        if (header) document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+    };
+    syncHeaderHeight();
+    window.addEventListener('resize', syncHeaderHeight);
+    window.addEventListener('load', syncHeaderHeight);
+    var onMediaChange = function (mq, fn) {
+        if (mq.addEventListener) mq.addEventListener('change', fn);
+        else if (mq.addListener) mq.addListener(fn); // iOS Safari < 14
+    };
+
     /* ---------- Mobile menu ---------- */
     var toggle = document.querySelector('.nav-toggle');
     var menu = document.getElementById('site-menu');
@@ -44,7 +57,9 @@
             }
             menu.classList.toggle('is-open', open);
             toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-            document.documentElement.style.overflow = open ? 'hidden' : '';
+            // Lock scrolling on <body>: setting it on <html> turns body into the scroll
+            // container (body has overflow-x: hidden) and breaks the sticky header.
+            document.body.style.overflow = open ? 'hidden' : '';
             if (open) {
                 var first = menu.querySelector('a');
                 if (first) first.focus();
@@ -66,7 +81,7 @@
         menu.addEventListener('click', function (e) {
             if (e.target.closest('a')) setMenu(false);
         });
-        window.matchMedia('(min-width: 981px)').addEventListener('change', function (mq) {
+        onMediaChange(window.matchMedia('(min-width: 981px)'), function (mq) {
             if (mq.matches) setMenu(false);
         });
     }
@@ -86,25 +101,10 @@
             else document.documentElement.removeAttribute('data-text-size');
             try { localStorage.setItem('gms-text-size', size); } catch (e) { /* private mode */ }
             syncSizeButtons();
+            syncHeaderHeight();
         });
     });
     syncSizeButtons();
-
-    /* ---------- Scroll reveal ---------- */
-    var reveals = document.querySelectorAll('.reveal');
-    if (reveals.length && 'IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    io.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        reveals.forEach(function (el) { io.observe(el); });
-    } else {
-        reveals.forEach(function (el) { el.classList.add('visible'); });
-    }
 
     /* ---------- Formspree submission (any form[data-formspree]) ---------- */
     function showStatus(form, message) {
@@ -172,7 +172,6 @@
     function initStepper(form) {
         var steps = Array.prototype.slice.call(form.querySelectorAll('.form-step'));
         var progressItems = form.querySelectorAll('.progress-steps li');
-        var progressFill = form.querySelector('.progress-bar span');
         var progressText = form.querySelector('.progress-text');
         var current = 0;
         form.classList.add('is-stepper');
@@ -245,7 +244,6 @@
                 if (i === index) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current');
                 li.classList.toggle('done', i < index);
             });
-            if (progressFill) progressFill.style.width = ((index + 1) / steps.length * 100) + '%';
             if (progressText) progressText.textContent = 'Step ' + (index + 1) + ' of ' + steps.length;
             if (index === steps.length - 1) buildSummary();
             if (focus) {

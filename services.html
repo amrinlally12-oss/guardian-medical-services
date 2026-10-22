@@ -24,8 +24,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap">
-    <link rel="stylesheet" href="/css/style.css?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@500&amp;family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&amp;display=swap">
+    <link rel="stylesheet" href="/css/style.css?v=7">
     <script>(function(d){d.classList.add('js');try{var s=localStorage.getItem('gms-text-size');if(s)d.setAttribute('data-text-size',s);}catch(e){}})(document.documentElement);</script>
     <!-- HEAD:END -->
     <script type="application/ld+json">
@@ -81,9 +81,9 @@
                 <div class="nav-cta">
                     <a href="tel:+15304536220" class="nav-phone" data-track="call-header">
                         <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-phone"/></svg>
-                        <span><span class="nav-phone-label">Call 24/7</span> (530) 453-6220</span>
+                        <span><span class="nav-phone-label">Booking 24/7</span> (530) 453-6220</span>
                     </a>
-                    <a href="/book.html" class="btn btn-primary btn-sm" data-nav="book">Request a Ride</a>
+                    <a href="/book.html" class="btn btn-primary btn-sm" data-nav="book">Request a ride</a>
                 </div>
             </div>
         </nav>
@@ -94,27 +94,29 @@
         <section class="page-hero">
             <div class="container">
                 <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Services</li></ol></nav>
-                <span class="eyebrow">Our services</span>
                 <h1>Transportation for every level of care</h1>
                 <p>Whatever your mobility needs, we send the right vehicle and a trained, certified driver to get you there safely.</p>
                 <div class="hero-actions">
-                    <a href="/book.html" class="btn btn-light btn-lg">Request a Ride</a>
-                    <a href="tel:+15304536220" class="btn btn-ghost btn-lg" data-track="call-services-hero">Call (530) 453-6220</a>
+                    <a href="/book.html" class="btn btn-primary btn-lg">Request a ride</a>
+                    <a href="tel:+15304536220" class="phone-link" data-track="call-services-hero">
+                        <span class="label">Or call, 24/7</span>
+                        <span class="num">(530) 453-6220</span>
+                    </a>
                 </div>
             </div>
         </section>
 
         <section class="section" aria-labelledby="core-title">
             <div class="container">
-                <div class="section-head reveal">
+                <div class="section-head">
                     <span class="eyebrow">Choose your ride</span>
                     <h2 id="core-title">Six ways we can help</h2>
                     <p class="lead">Not sure which fits? Choose "Not sure" when you request a ride and we'll help you decide.</p>
                 </div>
 
                 <div class="service-list">
-                    <article class="service-row reveal" id="ambulatory">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-walk"/></svg></div>
+                    <article class="service-row" id="ambulatory">
+                        <span class="row-num" aria-hidden="true">01</span>
                         <div>
                             <span class="tag">Core service</span>
                             <h3>Ambulatory transport</h3>
@@ -129,8 +131,8 @@
                         <a href="/book.html?service=ambulatory" class="btn btn-secondary">Request this ride</a>
                     </article>
 
-                    <article class="service-row reveal" id="wheelchair">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-wheelchair"/></svg></div>
+                    <article class="service-row" id="wheelchair">
+                        <span class="row-num" aria-hidden="true">02</span>
                         <div>
                             <span class="tag">Core service</span>
                             <h3>Wheelchair transport</h3>
@@ -145,8 +147,8 @@
                         <a href="/book.html?service=wheelchair" class="btn btn-secondary">Request this ride</a>
                     </article>
 
-                    <article class="service-row reveal" id="gurney">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-gurney"/></svg></div>
+                    <article class="service-row" id="gurney">
+                        <span class="row-num" aria-hidden="true">03</span>
                         <div>
                             <span class="tag">Core service</span>
                             <h3>Gurney / stretcher transport</h3>
@@ -161,8 +163,8 @@
                         <a href="/book.html?service=gurney" class="btn btn-secondary">Request this ride</a>
                     </article>
 
-                    <article class="service-row reveal" id="bariatric">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-expand"/></svg></div>
+                    <article class="service-row" id="bariatric">
+                        <span class="row-num" aria-hidden="true">04</span>
                         <div>
                             <span class="tag">Specialty service</span>
                             <h3>Bariatric transport</h3>
@@ -175,8 +177,8 @@
                         <a href="/book.html?service=bariatric" class="btn btn-secondary">Request this ride</a>
                     </article>
 
-                    <article class="service-row reveal" id="oxygen">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-oxygen"/></svg></div>
+                    <article class="service-row" id="oxygen">
+                        <span class="row-num" aria-hidden="true">05</span>
                         <div>
                             <span class="tag">Specialty service</span>
                             <h3>Oxygen-tank transport</h3>
@@ -189,8 +191,8 @@
                         <a href="/book.html?service=oxygen" class="btn btn-secondary">Request this ride</a>
                     </article>
 
-                    <article class="service-row reveal" id="long-distance">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-route"/></svg></div>
+                    <article class="service-row" id="long-distance">
+                        <span class="row-num" aria-hidden="true">06</span>
                         <div>
                             <span class="tag">Specialty service</span>
                             <h3>Long-distance transport</h3>
@@ -208,23 +210,20 @@
 
         <section class="section section-alt" aria-labelledby="included-title">
             <div class="container">
-                <div class="section-head reveal">
+                <div class="section-head">
                     <span class="eyebrow">Every ride</span>
                     <h2 id="included-title">What's included with every trip</h2>
                 </div>
                 <div class="grid grid-3">
-                    <div class="card reveal">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-shield"/></svg></div>
+                    <div class="card">
                         <h3>A certified driver</h3>
                         <p>HIPAA, First Aid, and CPR certified, background-checked, and trained in patient care.</p>
                     </div>
-                    <div class="card reveal d1">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-van"/></svg></div>
+                    <div class="card">
                         <h3>A safe, equipped vehicle</h3>
                         <p>Regularly inspected vehicles with lifts, securement systems, and first aid supplies.</p>
                     </div>
-                    <div class="card reveal d2">
-                        <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-users"/></svg></div>
+                    <div class="card">
                         <h3>Room for family</h3>
                         <p>Family members or caregivers can ride along at no extra charge.</p>
                     </div>
@@ -234,7 +233,7 @@
 
         <section class="section" aria-labelledby="who-title">
             <div class="container split split-center">
-                <div class="reveal">
+                <div>
                     <span class="eyebrow">Where we take you</span>
                     <h2 id="who-title" class="h2">Trusted for the trips that matter</h2>
                     <p class="lead">We work with families, senior living communities, care facilities, hospitals, and dialysis centers to make every trip go smoothly.</p>
@@ -245,7 +244,7 @@
                         <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check"/></svg> Senior living &amp; residential care transfers</li>
                     </ul>
                 </div>
-                <div class="panel reveal d1">
+                <div class="panel">
                     <h3>How pricing works</h3>
                     <p>We're a private-pay provider, so there's no insurance paperwork and no broker in the middle. Every trip is quoted before you book, based on the type of transport and the distance.</p>
                     <div class="hero-actions">
@@ -261,7 +260,7 @@
                 <h2 id="cta-title">Not sure which service you need?</h2>
                 <p>Call us and we'll help you choose the right transport for your situation.</p>
                 <div class="cta-actions">
-                    <a href="/book.html" class="btn btn-light btn-lg">Request a Ride</a>
+                    <a href="/book.html" class="btn btn-light btn-lg">Request a ride</a>
                     <a href="tel:+15304536220" class="btn btn-ghost btn-lg" data-track="call-cta">Call (530) 453-6220</a>
                 </div>
             </div>
@@ -277,7 +276,7 @@
                     <span class="wordmark"><span class="wm-main">GUARDIAN</span><span class="wm-sub">MEDICAL SERVICES</span></span>
                 </a>
                 <p>Private-pay, non-emergency medical transportation for families and facilities across the Sacramento Valley and Northern California.</p>
-                <a href="/book.html" class="btn btn-primary btn-sm">Request a Ride</a>
+                <a href="/book.html" class="btn btn-primary btn-sm">Request a ride</a>
             </div>
 
             <div class="footer-col">
@@ -324,7 +323,7 @@
 
         <div class="container footer-bottom">
             <p class="disclaimer">Guardian Medical Services provides non-emergency medical transportation only. In a medical emergency, call 911. We are a private-pay service and do not bill insurance, Medi-Cal/Medicaid, or transportation brokers.</p>
-            <p>&copy; <span id="year">2026</span> Guardian Medical Services. All rights reserved.</p>
+            <p class="copyright">&copy; <span id="year">2026</span> Guardian Medical Services</p>
         </div>
     </footer>
 
@@ -335,11 +334,11 @@
         </a>
         <a href="/book.html" class="mobile-action mobile-action-book">
             <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-calendar"/></svg>
-            <span><strong>Request a Ride</strong></span>
+            <span><strong>Request a ride</strong></span>
         </a>
     </div>
 
-    <script src="/js/main.js?v=3" defer></script>
+    <script src="/js/main.js?v=7" defer></script>
     <!-- FOOTER:END -->
 </body>
 </html>

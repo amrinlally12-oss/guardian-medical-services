@@ -13,7 +13,8 @@ care facilities. Skews older, so readability and large tap targets matter.
 ## Tech Stack
 
 - Pure HTML / CSS / JavaScript — no frameworks. GitHub Pages serves the committed files.
-- Google Fonts: Poppins 600/700/800 (display) + Inter 400–700 (body)
+- Google Fonts: Atkinson Hyperlegible Next 400/500/700/800 (all text) + Atkinson Hyperlegible
+  Mono 500 (the "data voice": labels, phone numbers, counties, step numbers, breadcrumbs)
 - Formspree endpoint `https://formspree.io/f/mnjyjjgy` (→ admin@guardianms.org) for both
   the booking form and the facility account form (different `_subject`)
 - Pillow (Python) for generating image assets
@@ -21,13 +22,14 @@ care facilities. Skews older, so readability and large tap targets matter.
 ## File Structure
 
 ```
-index.html        Home (hero + ride card, audiences, services, steps, why, area, FAQ teaser)
+index.html        Home (hero + ride ticket + spec row, who's riding, services index, why private pay,
+                  service-area departure board, FAQ teaser, closing call CTA)
 services.html     All 6 services with anchors (#ambulatory #wheelchair #gurney #bariatric #oxygen #long-distance)
 book.html         3-step ride request (Formspree)
 facilities.html   B2B page + facility account form
 about.html, faq.html, contact.html, privacy.html (privacy + accessibility statement), 404.html
 css/style.css     All styles; design tokens at top
-js/main.js        Header, mobile menu, text size, reveal, booking stepper, Formspree submit, tracking hooks
+js/main.js        Header, mobile menu, text size, booking stepper, Formspree submit, tracking hooks
 images/           icons.svg (sprite), logo*.webp/png, favicons, og-image.jpg
 _partials/        head.html, header.html, footer.html  (NOT published — Jekyll skips "_" dirs)
 _tools/           sync_partials.py, build_assets.py   (NOT published)
@@ -64,12 +66,37 @@ When CSS/JS changes need to bust caches, bump `?v=` in `_partials/head.html` / `
 - Base text is 18px (`html { font-size: 112.5% }`); size everything in rem so the
   A / A+ / A++ control (`data-text-size` on <html>, saved in localStorage) scales it.
 - No inline `style=""` attributes; add a class.
-- Content must work without JS: `.reveal` and `[data-show-when]` are only hidden under
-  `.js`; the FAQ uses native `<details>`; the booking form becomes one long form.
+- Content must work without JS: `[data-show-when]` is only hidden under `.js`; the FAQ
+  uses native `<details>`; the booking form becomes one long form. No scroll-reveal animation.
 - In `.check-list` items, wrap text in a `<span>` if it contains a link (items are flex).
 - Booking stepper: one `<fieldset class="form-step" data-step="N">` per step; conditional
   fields use `data-show-when="radioName=Value|Value2"`; links can prefill with
   `book.html?for=self|family|facility&service=<data-key>`.
+
+## Visual design system ("Wayfinding + editorial", Oct 2026)
+
+Chosen to avoid the generic AI/template look (centred eyebrow+H2 in every section, icon
+tiles in tinted squares, uniform rounded cards with shadows, fade-ups, Poppins/Inter).
+
+- **Type:** big, tight, left-aligned headlines (`--fs-h1`, weight 800, negative tracking).
+  Mono labels (`.label`, `.eyebrow`) for small data/labels only, never body copy. Labels are
+  sentence case (no all-caps, min ~15px); caps only on the board's county names and headers.
+  Buttons and CTAs are sentence case ("Request a ride").
+- **Structure by hairlines, not boxes:** `--rule` 1px dividers and 2px `--ink` top rules.
+  Components: `.section-head` (label column + title column), `.ruled-cols`, `.index-list`
+  (numbered service rows), `.numbered` (2×2), `.spec-row`, `.kv`, `.card` (renders as a
+  numbered ruled cell via CSS counter; no icon tiles).
+- **Signature motif — the route line:** amber dot → line → shield. Used in `.eyebrow`,
+  breadcrumb separators, the hero `.ticket` stops, booking `.progress-steps` stations,
+  and the 404 `.broken-route`. `--signal` amber is decorative only, never text on light.
+- **Surfaces:** white and `--paper` (#f3f6f6, cool — not cream); navy for `.cta`/panels,
+  navy-deep for the `.board` departure-board table and footer. Buttons are pills; sections
+  and panels are square-ish (`--radius` 6px). One shadow only (the hero ticket).
+- **Departure board** (`.board`): a real `<table>` with caption, scoped headers and explicit
+  ARIA roles (rows stack as blocks under 560px, so the roles keep table semantics); the region
+  column hides under 760px. Towns listed are plain geography, no availability claims.
+- The header height can vary (nav wraps at large text sizes); main.js writes `--header-h`,
+  which drives `scroll-padding-top` and sticky sidebars. Don't hard-code header offsets.
 
 ## Company Facts
 
@@ -107,6 +134,7 @@ business locality (used in JSON-LD).
 - [x] Phase 1 premium rebuild (Oct 2026): partials, accessibility (WCAG 2.2 AA), sticky
       mobile call bar, 3-step booking, facilities page, FAQ expansion, SEO (JSON-LD, OG,
       sitemap, canonicals), WebP/sprite performance work
+- [x] Visual redesign (Oct 2026): "Wayfinding + editorial" system (see above)
 - [ ] Owner: Google Business Profile, review requests, vehicle/driver photos
 - [ ] Phase 2: county/hub pages with real local destinations, service-area map,
       Spanish pages, photos, reviews section, analytics provider (hooks: `data-track`)

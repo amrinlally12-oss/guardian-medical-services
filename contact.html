@@ -24,8 +24,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap">
-    <link rel="stylesheet" href="/css/style.css?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@500&amp;family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&amp;display=swap">
+    <link rel="stylesheet" href="/css/style.css?v=7">
     <script>(function(d){d.classList.add('js');try{var s=localStorage.getItem('gms-text-size');if(s)d.setAttribute('data-text-size',s);}catch(e){}})(document.documentElement);</script>
     <!-- HEAD:END -->
     <script type="application/ld+json">
@@ -81,9 +81,9 @@
                 <div class="nav-cta">
                     <a href="tel:+15304536220" class="nav-phone" data-track="call-header">
                         <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-phone"/></svg>
-                        <span><span class="nav-phone-label">Call 24/7</span> (530) 453-6220</span>
+                        <span><span class="nav-phone-label">Booking 24/7</span> (530) 453-6220</span>
                     </a>
-                    <a href="/book.html" class="btn btn-primary btn-sm" data-nav="book">Request a Ride</a>
+                    <a href="/book.html" class="btn btn-primary btn-sm" data-nav="book">Request a ride</a>
                 </div>
             </div>
         </nav>
@@ -94,71 +94,78 @@
         <section class="page-hero">
             <div class="container">
                 <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Contact</li></ol></nav>
-                <span class="eyebrow">Contact</span>
                 <h1>We're here to help, day or night</h1>
                 <p>Call to book a ride or ask a question. Our booking line is open 24/7.</p>
             </div>
         </section>
 
         <section class="section">
-            <div class="container grid grid-3">
-                <div class="card contact-card reveal">
-                    <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-phone"/></svg></div>
-                    <h2 class="h3-like">Call us</h2>
-                    <p><a href="tel:+15304536220" class="big-link" data-track="call-contact">(530) 453-6220</a></p>
-                    <p>Rides &amp; booking, 24/7</p>
+            <div class="container split">
+                <div>
+                    <h2 class="sr-only">Ways to reach us</h2>
+                    <dl class="kv">
+                        <div class="kv-row">
+                            <dt>Call &middot; 24/7</dt>
+                            <dd><a href="tel:+15304536220" class="kv-big" data-track="call-contact">(530) 453-6220</a> Rides &amp; booking, any time</dd>
+                        </div>
+                        <div class="kv-row">
+                            <dt>Email</dt>
+                            <dd><a href="mailto:Admin@guardianms.org" class="kv-big">Admin@guardianms.org</a> For non-urgent questions</dd>
+                        </div>
+                        <div class="kv-row">
+                            <dt>Online</dt>
+                            <dd><a href="/book.html" class="kv-big">Request a ride</a> Three short steps; we call to confirm</dd>
+                        </div>
+                    </dl>
                 </div>
-                <div class="card contact-card reveal d1">
-                    <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-mail"/></svg></div>
-                    <h2 class="h3-like">Email</h2>
-                    <p><a href="mailto:Admin@guardianms.org" class="big-link">Admin@guardianms.org</a></p>
-                    <p>For non-urgent questions</p>
-                </div>
-                <div class="card contact-card reveal d2">
-                    <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-calendar"/></svg></div>
-                    <h2 class="h3-like">Request online</h2>
-                    <p><a href="/book.html" class="big-link">Request a ride</a></p>
-                    <p>Three short steps; we call to confirm</p>
+                <div class="panel panel-soft">
+                    <span class="label">Hours</span>
+                    <h2>When to reach us</h2>
+                    <table class="hours-table">
+                        <caption class="sr-only">Booking line and office hours</caption>
+                        <tbody role="rowgroup">
+                            <tr><th scope="row">Booking line</th><td>24 hours, 7 days</td></tr>
+                            <tr><th scope="row">Office: Monday&ndash;Friday</th><td>8:00 AM &ndash; 6:00 PM</td></tr>
+                            <tr><th scope="row">Office: Saturday</th><td>9:00 AM &ndash; 3:00 PM</td></tr>
+                            <tr><th scope="row">Office: Sunday</th><td>Closed</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="mt-lg">Rides can be requested any time, day or night. Office hours are for administrative questions.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt" aria-labelledby="hours-title">
-            <div class="container split">
-                <div class="reveal">
-                    <div class="panel">
-                        <h2 id="hours-title">Hours</h2>
-                        <ul class="hours">
-                            <li><span>Booking line</span><strong>24 hours, 7 days</strong></li>
-                            <li><span>Office: Monday – Friday</span><strong>8:00 AM – 6:00 PM</strong></li>
-                            <li><span>Office: Saturday</span><strong>9:00 AM – 3:00 PM</strong></li>
-                            <li><span>Office: Sunday</span><strong>Closed</strong></li>
-                        </ul>
-                        <p class="mt-lg">Rides can be requested any time, day or night. Office hours are for administrative questions.</p>
-                        <div class="hero-actions">
-                            <a href="/book.html" class="btn btn-light">Request a Ride</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="reveal d1">
+        <section class="section board-section" aria-labelledby="area-title">
+            <div class="container">
+                <div class="section-head">
                     <span class="eyebrow">Service area</span>
-                    <h2 class="h2">11 counties across Northern California</h2>
-                    <div class="region-stack">
-                        <div class="region">
-                            <h3><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-pin"/></svg> North Valley</h3>
-                            <ul class="chips"><li>Yuba</li><li>Sutter</li><li>Butte</li><li>Colusa</li><li>Glenn</li></ul>
-                        </div>
-                        <div class="region">
-                            <h3><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-pin"/></svg> Sacramento &amp; foothills</h3>
-                            <ul class="chips"><li>Sacramento</li><li>Placer</li><li>Nevada</li></ul>
-                        </div>
-                        <div class="region">
-                            <h3><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-pin"/></svg> Yolo, Solano &amp; Delta</h3>
-                            <ul class="chips"><li>Yolo</li><li>Solano</li><li>San Joaquin</li></ul>
-                        </div>
-                    </div>
-                    <p class="hint">Plus long-distance trips beyond our area. Just ask.</p>
+                    <h2 id="area-title">Eleven counties across Northern California</h2>
+                    <p class="lead">Plus long-distance trips beyond our area. Just ask.</p>
                 </div>
+                <div class="board-wrap">
+                    <p class="board-bar"><span>Northern California &middot; 11 counties</span><span class="live">Booking line open 24/7</span></p>
+                    <table class="board" role="table">
+                        <caption class="sr-only">Counties we serve, with region and main towns</caption>
+                        <thead role="rowgroup">
+                            <tr role="row"><th role="columnheader" scope="col">County</th><th role="columnheader" scope="col" class="col-region">Region</th><th role="columnheader" scope="col">Main towns</th></tr>
+                        </thead>
+                        <tbody role="rowgroup">
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Yuba</th><td role="cell" class="b-region">North Valley</td><td role="cell" class="b-towns">Marysville &middot; Olivehurst &middot; Wheatland</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Sutter</th><td role="cell" class="b-region">North Valley</td><td role="cell" class="b-towns">Yuba City &middot; Live Oak</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Butte</th><td role="cell" class="b-region">North Valley</td><td role="cell" class="b-towns">Chico &middot; Oroville &middot; Paradise</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Colusa</th><td role="cell" class="b-region">North Valley</td><td role="cell" class="b-towns">Colusa &middot; Williams</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Glenn</th><td role="cell" class="b-region">North Valley</td><td role="cell" class="b-towns">Willows &middot; Orland</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Sacramento</th><td role="cell" class="b-region">Sacramento &amp; foothills</td><td role="cell" class="b-towns">Sacramento &middot; Elk Grove &middot; Folsom</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Placer</th><td role="cell" class="b-region">Sacramento &amp; foothills</td><td role="cell" class="b-towns">Roseville &middot; Rocklin &middot; Auburn</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Nevada</th><td role="cell" class="b-region">Sacramento &amp; foothills</td><td role="cell" class="b-towns">Grass Valley &middot; Nevada City</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Yolo</th><td role="cell" class="b-region">Yolo, Solano &amp; Delta</td><td role="cell" class="b-towns">Davis &middot; Woodland &middot; West Sacramento</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">Solano</th><td role="cell" class="b-region">Yolo, Solano &amp; Delta</td><td role="cell" class="b-towns">Vacaville &middot; Fairfield &middot; Vallejo</td></tr>
+                            <tr role="row"><th role="rowheader" scope="row" class="b-county">San Joaquin</th><td role="cell" class="b-region">Yolo, Solano &amp; Delta</td><td role="cell" class="b-towns">Stockton &middot; Lodi &middot; Tracy</td></tr>
+                            <tr class="b-long" role="row"><th role="rowheader" scope="row" class="b-county">Long distance</th><td role="cell" class="b-region">Beyond our area</td><td role="cell" class="b-towns">On request &middot; quoted before you book</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="board-note">Not sure if we cover your address? Call <a href="tel:+15304536220" data-track="call-area">(530) 453-6220</a> and we'll let you know.</p>
             </div>
         </section>
 
@@ -167,7 +174,7 @@
                 <h2 id="cta-title">Let's get you where you need to go</h2>
                 <p>Call now or send a ride request, and a coordinator will take care of the rest.</p>
                 <div class="cta-actions">
-                    <a href="/book.html" class="btn btn-light btn-lg">Request a Ride</a>
+                    <a href="/book.html" class="btn btn-light btn-lg">Request a ride</a>
                     <a href="tel:+15304536220" class="btn btn-ghost btn-lg" data-track="call-cta">Call (530) 453-6220</a>
                 </div>
             </div>
@@ -183,7 +190,7 @@
                     <span class="wordmark"><span class="wm-main">GUARDIAN</span><span class="wm-sub">MEDICAL SERVICES</span></span>
                 </a>
                 <p>Private-pay, non-emergency medical transportation for families and facilities across the Sacramento Valley and Northern California.</p>
-                <a href="/book.html" class="btn btn-primary btn-sm">Request a Ride</a>
+                <a href="/book.html" class="btn btn-primary btn-sm">Request a ride</a>
             </div>
 
             <div class="footer-col">
@@ -230,7 +237,7 @@
 
         <div class="container footer-bottom">
             <p class="disclaimer">Guardian Medical Services provides non-emergency medical transportation only. In a medical emergency, call 911. We are a private-pay service and do not bill insurance, Medi-Cal/Medicaid, or transportation brokers.</p>
-            <p>&copy; <span id="year">2026</span> Guardian Medical Services. All rights reserved.</p>
+            <p class="copyright">&copy; <span id="year">2026</span> Guardian Medical Services</p>
         </div>
     </footer>
 
@@ -241,11 +248,11 @@
         </a>
         <a href="/book.html" class="mobile-action mobile-action-book">
             <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-calendar"/></svg>
-            <span><strong>Request a Ride</strong></span>
+            <span><strong>Request a ride</strong></span>
         </a>
     </div>
 
-    <script src="/js/main.js?v=3" defer></script>
+    <script src="/js/main.js?v=7" defer></script>
     <!-- FOOTER:END -->
 </body>
 </html>
